@@ -1,0 +1,26 @@
+<div class="hero-unit">
+<h1>Listing Opacity logs</h1>
+<a href= 'javascrip:document.location.reload();'> click to load new data</a>
+</br>
+</br>
+<table border='1'>
+	<tr>
+    
+    <th>Number</th>
+		<th>Opacity</th>
+    <th>Logged at</th>
+    <th></th>
+  </tr>
+
+
+<% @data.each do |datum| %>
+  <tr>
+    <td><%= datum.number %></td>
+    <td><%= datum.opacity.to_s + '%' %></td>
+		<td><%= datum.created_at.strftime("%H:%M:%S  ") +  datum.created_at.strftime("%d %b. %Y")%></td>
+    <td><%= link_to 'Delete', datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+</div>
