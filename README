@@ -1,0 +1,12 @@
+Authors: Aman Kapur, Eric Tappan, Reilly Butler
+
+Olin College of Engineering's PoE Lab 2
+
+FILES to look at: 
+
+lab2.py : python code to interact with arduino and post to server
+lab2.c : ardunio code to read opacity readings
+
+pdish: folder containing ruby on rails code
+
+
