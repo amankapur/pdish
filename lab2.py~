@@ -53,9 +53,9 @@ while i <= no_dishes:		# loop this all dishes are completed
 				values['number'] = b[0]
 			elif "light" in input1:	# receiving light data
 				#print "light data is : " + str(b)
-				values['opacity'] = float(b[0])/1023 * 100;	# converting light data to opacity
+				values['opacity'] = float(b[0])/1023 * 100;	# converting light
 	print 'values are :               '
 	print values
 	if len(values) == 2:	
-		post_to_server('http://pdish.herokuapp.com/data', values)	# post to server
+		post_to_server('http://pdish.herokuapp.com/data', values)	
 		i+=1
